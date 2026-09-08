@@ -1,0 +1,110 @@
+header{
+    background-color: rgb(0, 0, 0);
+    position: relative; /* Daje punkt odniesienia dla logo */
+    display: flex;
+    justify-content: center; /* Wyśrodkowuje tekst idealnie na środku ekranu */
+    align-items: center;
+    min-height: 0px; /* Wysokość baneru, dostosuj według uznania */
+    padding: 10px;
+    color: white;
+}
+main{
+    background: linear-gradient(180deg, #000000 0%, #5c1fa6 100%);
+    height:100%;
+    text-align: center;
+    background-size: cover;        /* Obrazek wypełni całą sekcję main */
+    background-position: center;     /* Obrazek będzie wyśrodkowany */
+    background-repeat: no-repeat;
+  
+}
+footer{
+    text-align: left;
+    background: linear-gradient(180deg, #5c1fa6 0%, #6e2cb9 50%, #853ecc 100%);
+    clear: both;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+img{
+    position: flex;
+    left: 10px; /* Odstęp logo od lewej krawędzi ekranu */
+    top:10px; /* Odstęp logo od gornej krawędzi ekranu */
+    height: auto; /* Wysokość logo - zmniejsz, jeśli baner jest za duży */
+    width: auto;
+    border-width: 2px;
+    border-color: rgb(92, 55, 160);
+    border-style: solid;
+}
+.główka{
+    border-radius: 8px;
+}
+
+.skyblock-card {
+    /* Mniejsza krycie (0.15), żeby tło przebijało */
+    background: rgba(255, 255, 255, 0.15) !important;
+    
+    /* Rozmycie tego, co jest POD kartą */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* Jasna, cienka ramka – to daje efekt krawędzi szkła */
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    /* Wewnętrzne i zewnętrzne podświetlenie */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3),
+                inset 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Naprawa kolorów tekstu, żeby były czytelne */
+.skyblock-card * {
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.skyblock-card a {
+    color: #e0b0ff !important; /* Jasnofioletowy/jaśniejszy link */
+    font-weight: bold;
+}
+nav{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid black;
+}
+.odnosniki {
+    color: #918e8e;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent; /* Rezerwuje miejsce na border, zapobiegając skakaniu elementu */
+    transition: border-color 0.3s ease; /* Płynne przejście efektu */
+}
+
+.odnosniki:hover {
+    border-color: rgba(138, 134, 134, 0.8); /* Poprawny format rgba(r, g, b, a) */
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0; /* Opcjonalnie: resetuje domyślne wcięcie */
+}
+.omnie{
+    color: white;
+}
+.kot{
+   
+
+}
