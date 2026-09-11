@@ -106,5 +106,7 @@ ul {
 }
 .kot{
    background-image: url('kitku.jpg');
+   width: auto;
+   height:100%;
 
 }
